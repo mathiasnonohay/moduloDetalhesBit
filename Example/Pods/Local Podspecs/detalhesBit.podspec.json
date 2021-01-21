@@ -1,0 +1,22 @@
+{
+  "name": "detalhesBit",
+  "version": "0.1.0",
+  "summary": "A short description of detalhesBit.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/mathiasnonohay/detalhesBit",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "mathiasnonohay": "mathias12300@gmail.com"
+  },
+  "source": {
+    "git": "https://github.com/mathiasnonohay/detalhesBit.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "9.0"
+  },
+  "source_files": "detalhesBit/Classes/**/*"
+}
