@@ -35,7 +35,6 @@
 		DE3C22B7B49C139DAEB7655542275150 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 57221B54D014471C3D3E1925EFC917C8 /* Foundation.framework */; };
 		DE71CE4425BA114400335211 /* DetalhesBitCoinViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE71CE4225BA114400335211 /* DetalhesBitCoinViewController.swift */; };
 		DE71CE4525BA114400335211 /* DetalhesBitCoinViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = DE71CE4325BA114400335211 /* DetalhesBitCoinViewController.xib */; };
-		DE71CE5B25BB0DC000335211 /* CoinView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE71CE5A25BB0DC000335211 /* CoinView.swift */; };
 		E8AC509D18EBF21B1FEA909652A01108 /* FBSnapshotTestCasePlatform.m in Sources */ = {isa = PBXBuildFile; fileRef = 6ABB3EB3CCC5BCA82F40FE8DC87BB778 /* FBSnapshotTestCasePlatform.m */; };
 		F1AAAE00BB32B733B238E2B4E8424506 /* UIImage+Compare.h in Headers */ = {isa = PBXBuildFile; fileRef = 656116C8FA5458F45D4707110C9530EC /* UIImage+Compare.h */; settings = {ATTRIBUTES = (Private, ); }; };
 		F4BB65319D4AF360C6646F446B85AA3A /* Pods-detalhesBit_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 41B15820AC206286979D22F341F89AD5 /* Pods-detalhesBit_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -123,7 +122,6 @@
 		DC5A7BB95D0E2A2515CE42491BECBF10 /* Pods-detalhesBit_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-detalhesBit_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		DE71CE4225BA114400335211 /* DetalhesBitCoinViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetalhesBitCoinViewController.swift; sourceTree = "<group>"; };
 		DE71CE4325BA114400335211 /* DetalhesBitCoinViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DetalhesBitCoinViewController.xib; sourceTree = "<group>"; };
-		DE71CE5A25BB0DC000335211 /* CoinView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinView.swift; sourceTree = "<group>"; };
 		DF3F136B6AEF2F1C815B652A04DE2059 /* detalhesBit.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; path = detalhesBit.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		E658F388F01C72599CA75537950B6095 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		E968809ABBA7173F9104B85F8E665A59 /* Pods_detalhesBit_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_detalhesBit_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -340,12 +338,12 @@
 			path = Controller;
 			sourceTree = "<group>";
 		};
-		DE71CE6C25BB14B400335211 /* View */ = {
+		DE71CE8825BB5EED00335211 /* Favoritos */ = {
 			isa = PBXGroup;
 			children = (
-				DE71CE5A25BB0DC000335211 /* CoinView.swift */,
 			);
-			path = View;
+			name = Favoritos;
+			path = Controller/Favoritos;
 			sourceTree = "<group>";
 		};
 		E81A37DBDE41E671312C56736544E2FA /* Pods */ = {
@@ -370,8 +368,8 @@
 		FC355E7609A828A33F6533184190C534 /* detalhesBit */ = {
 			isa = PBXGroup;
 			children = (
-				DE71CE6C25BB14B400335211 /* View */,
 				DE71CE4E25BA18D800335211 /* Controller */,
+				DE71CE8825BB5EED00335211 /* Favoritos */,
 				65306386FBF80E005B07E0D92B2C813E /* Pod */,
 				8C2AEF541B350A0EB219591FA1034154 /* Support Files */,
 			);
@@ -566,7 +564,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DE71CE5B25BB0DC000335211 /* CoinView.swift in Sources */,
 				B292A63B6F8DE87C6CB4F84D5331ACE4 /* detalhesBit-dummy.m in Sources */,
 				DE71CE4425BA114400335211 /* DetalhesBitCoinViewController.swift in Sources */,
 			);
