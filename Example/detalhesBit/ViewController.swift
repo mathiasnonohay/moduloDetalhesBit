@@ -13,6 +13,8 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+//        let controllerFavoritos = FavoritosViewController()
+//        self.navigationController?.pushViewController(controllerFavoritos, animated: true)
         
         let controller = DetalhesBitCoinViewController(valor: 10, nome: "MAT", valorHora: 12000.0, valorMes: 13000.0, valorAno: 20930009.0)
         self.navigationController?.pushViewController(controller, animated: true)
