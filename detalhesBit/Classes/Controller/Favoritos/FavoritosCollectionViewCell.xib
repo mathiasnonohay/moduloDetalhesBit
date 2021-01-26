@@ -8,7 +8,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
-        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="FavoritosCollectionViewCell" customModule="detalhesBit"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
         <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="celulaFavoritos" id="gTV-IL-0wX" customClass="FavoritosollectionViewCell" customModule="detalhesBit" customModuleProvider="target">
             <rect key="frame" x="0.0" y="0.0" width="133" height="165"/>
@@ -54,12 +54,7 @@
                 <constraint firstItem="nzx-gO-UXy" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="44.5" id="z5q-DG-2JC"/>
             </constraints>
             <size key="customSize" width="133" height="165"/>
-            <connections>
-                <outlet property="labelAssetId" destination="nzx-gO-UXy" id="d5w-vY-6t6"/>
-                <outlet property="labelNome" destination="dyZ-4A-1XJ" id="m1N-9W-I6a"/>
-                <outlet property="labelValor" destination="8bk-2B-Tpx" id="PkM-iU-X4t"/>
-            </connections>
-            <point key="canvasLocation" x="197.82608695652175" y="132.92410714285714"/>
+            <point key="canvasLocation" x="-440" y="114"/>
         </collectionViewCell>
     </objects>
 </document>

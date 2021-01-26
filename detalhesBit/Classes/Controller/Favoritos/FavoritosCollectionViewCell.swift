@@ -7,16 +7,13 @@
 
 import UIKit
 
-class FavoritosollectionViewCell: UICollectionViewCell {
-
-
+public class FavoritosCollectionViewCell: UICollectionViewCell {
+    
     @IBOutlet weak var labelNome: UILabel!
     @IBOutlet weak var labelAssetId: UILabel!
     @IBOutlet weak var labelValor: UILabel!
     
-    override func awakeFromNib() {
+    override public func awakeFromNib() {
         super.awakeFromNib()
-        // Initialization code
     }
-
 }
