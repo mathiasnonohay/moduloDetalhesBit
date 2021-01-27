@@ -37,8 +37,8 @@
 		D04AAC8B22E4A4DC4F39891C4E52F251 /* UIImage+Diff.h in Headers */ = {isa = PBXBuildFile; fileRef = 96187BF3038121CC146335E9FF0B0AFF /* UIImage+Diff.h */; settings = {ATTRIBUTES = (Private, ); }; };
 		D56AE3CA37CAE934B19E939141A865CC /* Pods-detalhesBit_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 03D9AC8678F28F2667DA5438BA8CB714 /* Pods-detalhesBit_Tests-dummy.m */; };
 		D8F41689DF5C35E8425454241AB51AA2 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 57221B54D014471C3D3E1925EFC917C8 /* Foundation.framework */; };
-		DE71CED025C0A02F00335211 /* FavoritosCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE71CECE25C0A02F00335211 /* FavoritosCollectionViewCell.swift */; };
-		DE71CED125C0A02F00335211 /* FavoritosCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = DE71CECF25C0A02F00335211 /* FavoritosCollectionViewCell.xib */; };
+		DE71CEEA25C0ABB500335211 /* FavoritosCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE71CEE825C0ABB500335211 /* FavoritosCollectionViewCell.swift */; };
+		DE71CEEB25C0ABB500335211 /* FavoritosCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = DE71CEE925C0ABB500335211 /* FavoritosCollectionViewCell.xib */; };
 		E8AC509D18EBF21B1FEA909652A01108 /* FBSnapshotTestCasePlatform.m in Sources */ = {isa = PBXBuildFile; fileRef = 6ABB3EB3CCC5BCA82F40FE8DC87BB778 /* FBSnapshotTestCasePlatform.m */; };
 		F1AAAE00BB32B733B238E2B4E8424506 /* UIImage+Compare.h in Headers */ = {isa = PBXBuildFile; fileRef = 656116C8FA5458F45D4707110C9530EC /* UIImage+Compare.h */; settings = {ATTRIBUTES = (Private, ); }; };
 		F4BB65319D4AF360C6646F446B85AA3A /* Pods-detalhesBit_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 41B15820AC206286979D22F341F89AD5 /* Pods-detalhesBit_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -124,8 +124,8 @@
 		D08CEBB9BDD9EF7A662ECFC0305C169E /* FBSnapshotTestCase-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "FBSnapshotTestCase-prefix.pch"; sourceTree = "<group>"; };
 		D872A3EE224412D4057C234FBC629F9C /* UIImage+Snapshot.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIImage+Snapshot.m"; path = "FBSnapshotTestCase/Categories/UIImage+Snapshot.m"; sourceTree = "<group>"; };
 		DC5A7BB95D0E2A2515CE42491BECBF10 /* Pods-detalhesBit_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-detalhesBit_Example.debug.xcconfig"; sourceTree = "<group>"; };
-		DE71CECE25C0A02F00335211 /* FavoritosCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FavoritosCollectionViewCell.swift; sourceTree = "<group>"; };
-		DE71CECF25C0A02F00335211 /* FavoritosCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FavoritosCollectionViewCell.xib; sourceTree = "<group>"; };
+		DE71CEE825C0ABB500335211 /* FavoritosCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritosCollectionViewCell.swift; sourceTree = "<group>"; };
+		DE71CEE925C0ABB500335211 /* FavoritosCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FavoritosCollectionViewCell.xib; sourceTree = "<group>"; };
 		E658F388F01C72599CA75537950B6095 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		E7402D2C94C77FB36209B5EE271F5BC4 /* DetalhesBitCoinViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DetalhesBitCoinViewController.swift; path = detalhesBit/Classes/Controller/DetalhesBitCoinViewController.swift; sourceTree = "<group>"; };
 		E968809ABBA7173F9104B85F8E665A59 /* Pods_detalhesBit_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_detalhesBit_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -253,10 +253,10 @@
 		79A916627C2F6D06430DAF494A09C227 /* Favoritos */ = {
 			isa = PBXGroup;
 			children = (
-				DE71CECE25C0A02F00335211 /* FavoritosCollectionViewCell.swift */,
-				DE71CECF25C0A02F00335211 /* FavoritosCollectionViewCell.xib */,
 				BC58F28BFA8AA15E4D8BB41FAC7B43B4 /* FavoritosViewController.swift */,
 				24B59C36D65F0203B7C8325265BD6007 /* FavoritosViewController.xib */,
+				DE71CEE825C0ABB500335211 /* FavoritosCollectionViewCell.swift */,
+				DE71CEE925C0ABB500335211 /* FavoritosCollectionViewCell.xib */,
 			);
 			name = Favoritos;
 			path = detalhesBit/Classes/Controller/Favoritos;
@@ -543,7 +543,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DE71CED125C0A02F00335211 /* FavoritosCollectionViewCell.xib in Resources */,
+				DE71CEEB25C0ABB500335211 /* FavoritosCollectionViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -576,7 +576,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DE71CED025C0A02F00335211 /* FavoritosCollectionViewCell.swift in Sources */,
+				DE71CEEA25C0ABB500335211 /* FavoritosCollectionViewCell.swift in Sources */,
 				9DFFE02413254854C2C0A82384A8EAFA /* detalhesBit-dummy.m in Sources */,
 				356ED3FA4525E593764642233B7025C1 /* DetalhesBitCoinViewController.swift in Sources */,
 				8DAF58B9779DC9AD603E0D5F86F84036 /* DetalhesBitCoinViewController.xib in Sources */,

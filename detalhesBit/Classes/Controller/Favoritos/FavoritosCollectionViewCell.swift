@@ -1,19 +1,26 @@
 //
-//  FavoritosollectionViewCell.swift
+//  FavoritosCollectionViewCell.swift
 //  detalhesBit
 //
-//  Created by Mathias Almeida Nonohay on 1/22/21.
+//  Created by Mathias Almeida Nonohay on 1/26/21.
 //
 
 import UIKit
 
-public class FavoritosCollectionViewCell: UICollectionViewCell {
+class FavoritosCollectionViewCell: UICollectionViewCell {
+
+    @IBOutlet weak var nomeBit: UILabel!
+    @IBOutlet weak var imageBit: UIImageView!
+    @IBOutlet weak var idBit: UILabel!
+    @IBOutlet weak var valorBit: UILabel!
     
-    @IBOutlet weak var labelNome: UILabel!
-    @IBOutlet weak var labelAssetId: UILabel!
-    @IBOutlet weak var labelValor: UILabel!
-    
-    override public func awakeFromNib() {
+    override func awakeFromNib() {
         super.awakeFromNib()
+        celulaLayout()
     }
+    
+    func celulaLayout() {
+        self.layer.cornerRadius = 10
+    }
+
 }

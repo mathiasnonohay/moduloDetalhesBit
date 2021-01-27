@@ -14,7 +14,16 @@ public class FavoritosViewController: UIViewController {
     private let celulaFavoritosIdentifier = "celulaFavoritos"
     private var arrStrin: Array<String> = []
     
-    public init() {
+    private var valorBit: Double
+    private var idBit: String
+    private var nomeBit: String
+//    private var imageBit: UIImage
+    
+    public init(valorBit: Double, idBit: String, nomeBit: String) {
+        self.valorBit = valorBit
+        self.idBit = idBit
+        self.nomeBit = nomeBit
+//        self.imageBit = imageBit
         super.init(nibName: "FavoritosViewController", bundle: Bundle(for: FavoritosViewController.self))
     }
     
@@ -30,7 +39,7 @@ public class FavoritosViewController: UIViewController {
         collectionViewFavoritos.register(nibCelula, forCellWithReuseIdentifier: celulaFavoritosIdentifier)
         
         for _ in 1...25{
-            let str = "Teste"
+            let str = self.nomeBit
             arrStrin.append(str)
         }
         collectionViewFavoritos.reloadData()
@@ -50,10 +59,11 @@ extension FavoritosViewController: UICollectionViewDelegate, UICollectionViewDat
     public func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let celula = collectionView.dequeueReusableCell(withReuseIdentifier: celulaFavoritosIdentifier, for: indexPath) as!
             FavoritosCollectionViewCell
-//        let str = arrStrin[indexPath.row]
-//        celula.labelNome.text = str
-//        celula.labelAssetId.text = "BTC"
-//        celula.labelValor.text = "$ 31,102.81"
+        let str = arrStrin[indexPath.row]
+        celula.nomeBit.text = str
+        celula.idBit.text = "ID"
+        celula.valorBit.text = "\(self.valorBit)"
+//        celula.imageBit.image = self.imageBit
         
         return celula
     }
