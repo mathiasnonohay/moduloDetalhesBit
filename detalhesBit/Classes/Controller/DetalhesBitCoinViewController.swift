@@ -27,13 +27,14 @@ public class DetalhesBitCoinViewController: UIViewController {
     private var favorito: Bool!
 
     // MARK: - Contructor
-    public init(valor: Double, nome: String, valorHora: Double, valorMes: Double, valorAno: Double, favorito: Bool) {
+    public init(_ valor: Double, _ nome: String, _ valorHora: Double, _ valorMes: Double, _ valorAno: Double, _ favorito: Bool) {
         self.valor = valor
         self.nome = nome
         self.valorHora = valorHora
         self.valorMes = valorMes
         self.valorAno = valorAno
         self.favorito = favorito
+        
         super.init(nibName: "DetalhesBitCoinViewController", bundle: Bundle(for: DetalhesBitCoinViewController.self))
     }
     

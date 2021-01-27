@@ -68,8 +68,8 @@ extension FavoritosViewController: UICollectionViewDelegate, UICollectionViewDat
         return celula
     }
     public func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        let str = arrStrin[indexPath.row]
-        let controller = DetalhesBitCoinViewController(valor: 10, nome: "MAT", valorHora: 12000.0, valorMes: 13000.0, valorAno: 20930009.0, favorito: true)
+//        let str = arrStrin[indexPath.row]
+        let controller = DetalhesBitCoinViewController(10, "MAT", 12000.0, 13000.0, 20930009.0, true)
         self.navigationController?.pushViewController(controller, animated: true)
     }
 }
