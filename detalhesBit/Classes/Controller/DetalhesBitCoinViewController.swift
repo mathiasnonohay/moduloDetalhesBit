@@ -25,15 +25,17 @@ public class DetalhesBitCoinViewController: UIViewController {
     private var valorMes: Double!
     private var valorAno: Double!
     private var favorito: Bool!
+    private var numCelula: Int!
 
     // MARK: - Contructor
-    public init(_ valor: Double, _ nome: String, _ valorHora: Double, _ valorMes: Double, _ valorAno: Double, _ favorito: Bool) {
+    public init(_ valor: Double, _ nome: String, _ valorHora: Double, _ valorMes: Double, _ valorAno: Double, _ favorito: Bool, _ numCelula: Int) {
         self.valor = valor
         self.nome = nome
         self.valorHora = valorHora
         self.valorMes = valorMes
         self.valorAno = valorAno
         self.favorito = favorito
+        self.numCelula = numCelula
         
         super.init(nibName: "DetalhesBitCoinViewController", bundle: Bundle(for: DetalhesBitCoinViewController.self))
     }
