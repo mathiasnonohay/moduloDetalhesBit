@@ -1,0 +1,73 @@
+//
+//  DetalhesBitCoinViewController.swift
+//  detalhesBit
+//
+//  Created by Mathias Almeida Nonohay on 1/21/21.
+//
+
+import UIKit
+
+public class DetalhesBitCoinViewController: UIViewController {
+    
+    @IBOutlet weak var labelCoinValor: UILabel!
+    @IBOutlet weak var labelCoinNome: UILabel!
+    @IBOutlet weak var labelValorHor: UILabel!
+    @IBOutlet weak var labelValorMes: UILabel!
+    @IBOutlet weak var labelValorAno: UILabel!
+    @IBOutlet weak var botaoAddRem: UIButton!
+    @IBOutlet weak var favImage: UILabel!
+    @IBOutlet weak var labelEstrela: UILabel!
+    
+    // MARK: - Atributos
+    private var valor: Double!
+    private var nome: String!
+    private var valorHora: Double!
+    private var valorMes: Double!
+    private var valorAno: Double!
+    private var favorito: Bool!
+
+    // MARK: - Contructor
+    public init(_ valor: Double, _ nome: String, _ valorHora: Double, _ valorMes: Double, _ valorAno: Double, _ favorito: Bool) {
+        self.valor = valor
+        self.nome = nome
+        self.valorHora = valorHora
+        self.valorMes = valorMes
+        self.valorAno = valorAno
+        self.favorito = favorito
+        
+        super.init(nibName: "DetalhesBitCoinViewController", bundle: Bundle(for: DetalhesBitCoinViewController.self))
+    }
+    
+    required init?(coder: NSCoder) {
+        fatalError("init(coder:) has not been implemented")
+    }
+    
+    override public func viewDidLoad() {
+        super.viewDidLoad()
+        coinDetalhes(self.valor, self.nome, self.valorHora, self.valorMes, self.valorAno, self.favorito)
+    }
+    
+    private func coinDetalhes(_ valor: Double, _ nome: String, _ valorHora: Double, _ valorMes: Double, _ valorAno: Double, _ favorito: Bool) {
+        labelCoinValor.text = "$ \(valor)"
+        labelCoinNome.text = nome
+        labelValorHor.text = "$ \(valorHora)"
+        labelValorMes.text = "$ \(valorMes)"
+        labelValorAno.text = "$ \(valorAno)"
+        if favorito == true {
+            botaoAddRem.setTitle("REMOVER", for: .normal)
+            labelEstrela.text = "("
+            
+        } else {
+            botaoAddRem.setTitle("ADICIONAR", for: .normal)
+            labelEstrela.text = ""
+        }
+    }
+    @IBAction func botaoFavorito(_ sender: UIButton) {
+        if self.favorito == true{
+            self.favorito = false
+        } else {
+            self.favorito = true
+        }
+        coinDetalhes(self.valor, self.nome, self.valorHora, self.valorMes, self.valorAno, self.favorito)
+    }
+}

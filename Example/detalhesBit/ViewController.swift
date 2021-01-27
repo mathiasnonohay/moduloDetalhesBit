@@ -7,18 +7,21 @@
 //
 
 import UIKit
+import detalhesBit
 
 class ViewController: UIViewController {
-
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        let controllerFavoritos = FavoritosViewController(valorBit: 100000, idBit: "BTC", nomeBit: "BitCoin")
+        self.navigationController?.pushViewController(controllerFavoritos, animated: true)
+        
+//        let controller = DetalhesBitCoinViewController(10, "MAT", 12000.0, 13000.0, 20930009.0, true)
+//        self.navigationController?.pushViewController(controller, animated: true)
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
     }
 
 }
-
