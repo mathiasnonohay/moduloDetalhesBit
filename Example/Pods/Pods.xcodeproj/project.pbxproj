@@ -39,7 +39,6 @@
 		D8F41689DF5C35E8425454241AB51AA2 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 57221B54D014471C3D3E1925EFC917C8 /* Foundation.framework */; };
 		DE71CEEA25C0ABB500335211 /* FavoritosCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE71CEE825C0ABB500335211 /* FavoritosCollectionViewCell.swift */; };
 		DE71CEEB25C0ABB500335211 /* FavoritosCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = DE71CEE925C0ABB500335211 /* FavoritosCollectionViewCell.xib */; };
-		DE71CEF125C1DD9A00335211 /* BitCoinModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE71CEF025C1DD9A00335211 /* BitCoinModel.swift */; };
 		E8AC509D18EBF21B1FEA909652A01108 /* FBSnapshotTestCasePlatform.m in Sources */ = {isa = PBXBuildFile; fileRef = 6ABB3EB3CCC5BCA82F40FE8DC87BB778 /* FBSnapshotTestCasePlatform.m */; };
 		F1AAAE00BB32B733B238E2B4E8424506 /* UIImage+Compare.h in Headers */ = {isa = PBXBuildFile; fileRef = 656116C8FA5458F45D4707110C9530EC /* UIImage+Compare.h */; settings = {ATTRIBUTES = (Private, ); }; };
 		F4BB65319D4AF360C6646F446B85AA3A /* Pods-detalhesBit_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 41B15820AC206286979D22F341F89AD5 /* Pods-detalhesBit_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -127,7 +126,6 @@
 		DC5A7BB95D0E2A2515CE42491BECBF10 /* Pods-detalhesBit_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-detalhesBit_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		DE71CEE825C0ABB500335211 /* FavoritosCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritosCollectionViewCell.swift; sourceTree = "<group>"; };
 		DE71CEE925C0ABB500335211 /* FavoritosCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FavoritosCollectionViewCell.xib; sourceTree = "<group>"; };
-		DE71CEF025C1DD9A00335211 /* BitCoinModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BitCoinModel.swift; sourceTree = "<group>"; };
 		E658F388F01C72599CA75537950B6095 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		E7402D2C94C77FB36209B5EE271F5BC4 /* DetalhesBitCoinViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DetalhesBitCoinViewController.swift; path = detalhesBit/Classes/Controller/DetalhesBitCoinViewController.swift; sourceTree = "<group>"; };
 		E968809ABBA7173F9104B85F8E665A59 /* Pods_detalhesBit_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_detalhesBit_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -342,7 +340,6 @@
 		C06A445D1B381A70DEB0D944174AA484 /* detalhesBit */ = {
 			isa = PBXGroup;
 			children = (
-				DE71CEF625C1DDA300335211 /* Model */,
 				E7402D2C94C77FB36209B5EE271F5BC4 /* DetalhesBitCoinViewController.swift */,
 				FB06D0C0398ABF4B90F31AF8A26D5940 /* DetalhesBitCoinViewController.xib */,
 				79A916627C2F6D06430DAF494A09C227 /* Favoritos */,
@@ -363,14 +360,6 @@
 				5B1B2B4B5A6F50F9BCFE44E2E89EC746 /* Products */,
 				2090699048F28BD39637FE3604F72BF2 /* Targets Support Files */,
 			);
-			sourceTree = "<group>";
-		};
-		DE71CEF625C1DDA300335211 /* Model */ = {
-			isa = PBXGroup;
-			children = (
-				DE71CEF025C1DD9A00335211 /* BitCoinModel.swift */,
-			);
-			path = Model;
 			sourceTree = "<group>";
 		};
 		E81A37DBDE41E671312C56736544E2FA /* Pods */ = {
@@ -591,7 +580,6 @@
 				9DFFE02413254854C2C0A82384A8EAFA /* detalhesBit-dummy.m in Sources */,
 				356ED3FA4525E593764642233B7025C1 /* DetalhesBitCoinViewController.swift in Sources */,
 				8DAF58B9779DC9AD603E0D5F86F84036 /* DetalhesBitCoinViewController.xib in Sources */,
-				DE71CEF125C1DD9A00335211 /* BitCoinModel.swift in Sources */,
 				46B188F9EDE9DC0A0AE349732A8DD575 /* FavoritosViewController.swift in Sources */,
 				961920235D5A134126874371AB159A21 /* FavoritosViewController.xib in Sources */,
 			);
