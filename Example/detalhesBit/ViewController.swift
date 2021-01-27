@@ -16,7 +16,7 @@ class ViewController: UIViewController {
         let controllerFavoritos = FavoritosViewController(valorBit: 100000, idBit: "BTC", nomeBit: "BitCoin")
         self.navigationController?.pushViewController(controllerFavoritos, animated: true)
         
-//        let controller = DetalhesBitCoinViewController(valor: 10, nome: "MAT", valorHora: 12000.0, valorMes: 13000.0, valorAno: 20930009.0)
+//        let controller = DetalhesBitCoinViewController(valor: 10, nome: "MAT", valorHora: 12000.0, valorMes: 13000.0, valorAno: 20930009.0, favorito: true)
 //        self.navigationController?.pushViewController(controller, animated: true)
     }
 

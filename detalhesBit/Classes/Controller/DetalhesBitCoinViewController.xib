@@ -10,9 +10,11 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="DetalhesBitCoinViewController" customModule="detalhesBit" customModuleProvider="target">
             <connections>
-                <outlet property="buttonAddFavoritos" destination="0yY-G1-SuE" id="WUj-L3-ffh"/>
+                <outlet property="botaoAddRem" destination="0yY-G1-SuE" id="sTv-rP-ALc"/>
+                <outlet property="favImage" destination="gbP-eO-ThF" id="R1i-yW-110"/>
                 <outlet property="labelCoinNome" destination="2AX-Io-Qqf" id="yt4-2U-39d"/>
                 <outlet property="labelCoinValor" destination="9Bp-Xq-uZs" id="M8q-05-dEP"/>
+                <outlet property="labelEstrela" destination="gbP-eO-ThF" id="s8D-c9-4p6"/>
                 <outlet property="labelValorAno" destination="koW-YN-hpU" id="F78-3R-AaA"/>
                 <outlet property="labelValorHor" destination="NLl-8g-rmE" id="AJY-wV-ydr"/>
                 <outlet property="labelValorMes" destination="ebt-N5-zd6" id="hr3-Ch-bpC"/>
@@ -34,7 +36,7 @@
                             <nil key="highlightedColor"/>
                         </label>
                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="$ 31,010.20" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9Bp-Xq-uZs">
-                            <rect key="frame" x="108" y="160" width="198" height="41"/>
+                            <rect key="frame" x="108" y="181" width="198" height="41"/>
                             <fontDescription key="fontDescription" name="Avenir-Medium" family="Avenir" pointSize="30"/>
                             <color key="textColor" red="0.99164897200000002" green="0.99356168509999998" blue="0.92940312619999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                             <nil key="highlightedColor"/>
@@ -49,20 +51,40 @@
                             <state key="normal" title="ADICIONAR">
                                 <color key="titleColor" red="0.99164897200000002" green="0.99356168509999998" blue="0.92940312619999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                             </state>
+                            <connections>
+                                <action selector="botaoFavorito:" destination="-1" eventType="touchUpInside" id="cV9-zL-IRI"/>
+                            </connections>
                         </button>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="(" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gbP-eO-ThF">
+                            <rect key="frame" x="303" y="128.66666666666666" width="20.333333333333314" height="23.333333333333343"/>
+                            <fontDescription key="fontDescription" name="BodoniOrnamentsITCTT" family="Bodoni Ornaments" pointSize="24"/>
+                            <color key="textColor" red="0.99164897200000002" green="0.99356168509999998" blue="0.92940312619999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="BHt-nx-Zz5">
+                            <rect key="frame" x="185" y="128" width="44" height="45"/>
+                        </imageView>
                     </subviews>
                     <color key="backgroundColor" red="0.55567061900000003" green="0.59596520659999996" blue="0.38427555559999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                     <constraints>
                         <constraint firstItem="9Bp-Xq-uZs" firstAttribute="centerX" secondItem="rze-yt-wp4" secondAttribute="centerX" id="2u2-nT-XMQ"/>
-                        <constraint firstItem="0yY-G1-SuE" firstAttribute="top" secondItem="9Bp-Xq-uZs" secondAttribute="bottom" constant="45" id="F4w-IS-igf"/>
+                        <constraint firstItem="0yY-G1-SuE" firstAttribute="top" secondItem="9Bp-Xq-uZs" secondAttribute="bottom" constant="24" id="80m-KK-vHp"/>
+                        <constraint firstItem="9Bp-Xq-uZs" firstAttribute="top" secondItem="BHt-nx-Zz5" secondAttribute="bottom" constant="8" id="HJq-Pw-JWJ"/>
+                        <constraint firstItem="BHt-nx-Zz5" firstAttribute="centerX" secondItem="rze-yt-wp4" secondAttribute="centerX" id="HWj-3X-1nm"/>
                         <constraint firstItem="9Bp-Xq-uZs" firstAttribute="leading" secondItem="rze-yt-wp4" secondAttribute="leading" constant="108" id="Lg1-Gh-vda"/>
                         <constraint firstAttribute="height" constant="400" id="Ruf-dB-Rli"/>
                         <constraint firstItem="2AX-Io-Qqf" firstAttribute="centerX" secondItem="rze-yt-wp4" secondAttribute="centerX" id="SeD-lH-yME"/>
                         <constraint firstItem="2AX-Io-Qqf" firstAttribute="leading" secondItem="rze-yt-wp4" secondAttribute="leading" constant="171" id="Tur-Au-w6O"/>
                         <constraint firstAttribute="trailing" secondItem="9Bp-Xq-uZs" secondAttribute="trailing" constant="108" id="W1A-aY-5Im"/>
                         <constraint firstItem="2AX-Io-Qqf" firstAttribute="top" secondItem="rze-yt-wp4" secondAttribute="top" constant="95" id="ZIm-mc-O8g"/>
+                        <constraint firstItem="9Bp-Xq-uZs" firstAttribute="top" secondItem="rze-yt-wp4" secondAttribute="top" constant="181" id="csh-eV-t5z"/>
+                        <constraint firstItem="BHt-nx-Zz5" firstAttribute="leading" secondItem="rze-yt-wp4" secondAttribute="leading" constant="185" id="dQ7-fD-06D"/>
                         <constraint firstItem="0yY-G1-SuE" firstAttribute="centerX" secondItem="rze-yt-wp4" secondAttribute="centerX" id="ePf-Gq-vvx"/>
-                        <constraint firstItem="9Bp-Xq-uZs" firstAttribute="top" secondItem="2AX-Io-Qqf" secondAttribute="bottom" constant="41" id="giN-AT-Xpx"/>
+                        <constraint firstItem="gbP-eO-ThF" firstAttribute="leading" secondItem="BHt-nx-Zz5" secondAttribute="trailing" constant="74" id="o39-RS-ZuT"/>
+                        <constraint firstItem="BHt-nx-Zz5" firstAttribute="top" secondItem="2AX-Io-Qqf" secondAttribute="bottom" constant="9" id="s1d-fh-qgq"/>
+                        <constraint firstItem="9Bp-Xq-uZs" firstAttribute="top" secondItem="BHt-nx-Zz5" secondAttribute="bottom" constant="8" symbolic="YES" id="seB-8g-113"/>
+                        <constraint firstItem="0yY-G1-SuE" firstAttribute="top" secondItem="gbP-eO-ThF" secondAttribute="bottom" constant="94" id="tjl-pD-CUt"/>
+                        <constraint firstItem="9Bp-Xq-uZs" firstAttribute="top" secondItem="BHt-nx-Zz5" secondAttribute="bottom" constant="8" symbolic="YES" id="vMj-2I-VDZ"/>
                     </constraints>
                 </view>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="última hora" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QFp-jZ-iLr">
