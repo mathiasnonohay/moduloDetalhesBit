@@ -12,19 +12,22 @@ public class FavoritosViewController: UIViewController {
     @IBOutlet weak var collectionViewFavoritos: UICollectionView!
     
     private let celulaFavoritosIdentifier = "celulaFavoritos"
-    private var arrStrin: Array<String> = []
+    private var arrStrin: Array<Any> = []
     
     // MARK: - Atributos
-    private var valor: Double!
+    private var valor: String!
     private var nome: String!
-    private var valorHora: Double!
-    private var valorMes: Double!
-    private var valorAno: Double!
+    private var valorHora: String!
+    private var valorMes: String!
+    private var valorAno: String!
     private var favorito: Bool!
     private var numCelula: Int!
 
     // MARK: - Contructor
-    public init(_ valor: Double, _ nome: String, _ valorHora: Double, _ valorMes: Double, _ valorAno: Double, _ favorito: Bool, _ numCelula: Int) {
+    
+    // Favoritos precisam pegar umas lista de coins para listar corretamente
+    // No momento só pega um e lista X vezes aquele coin
+    public init(_ valor: String, _ nome: String, _ valorHora: String, _ valorMes: String, _ valorAno: String, _ favorito: Bool, _ numCelula: Int) {
         self.valor = valor
         self.nome = nome
         self.valorHora = valorHora
@@ -51,7 +54,7 @@ public class FavoritosViewController: UIViewController {
 
 extension FavoritosViewController: UICollectionViewDelegate, UICollectionViewDataSource{
     
-    private func numberOfSections(in collectionView: UICollectionView) -> Int {
+    public func numberOfSections(in collectionView: UICollectionView) -> Int {
         return 1
     }
     
@@ -62,9 +65,12 @@ extension FavoritosViewController: UICollectionViewDelegate, UICollectionViewDat
     public func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let celula = collectionView.dequeueReusableCell(withReuseIdentifier: celulaFavoritosIdentifier, for: indexPath) as!
             FavoritosCollectionViewCell
-        celula.nomeBit.text = self.nome
-        celula.idBit.text = "ID"
-        celula.valorBit.text = "\(String(describing: self.valor))"
+        guard let nome = self.nome else { return celula }
+        guard let valor = self.valor else { return celula }
+        celula.nomeBit.text = nome
+        celula.idBit.text = nome
+        
+        celula.valorBit.text = valor
 //        celula.imageBit.image = self.imageBit
         
         return celula

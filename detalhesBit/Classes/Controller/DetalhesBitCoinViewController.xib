@@ -29,9 +29,12 @@
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rze-yt-wp4">
                     <rect key="frame" x="0.0" y="0.0" width="414" height="400"/>
                     <subviews>
-                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="BTC" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2AX-Io-Qqf">
-                            <rect key="frame" x="171" y="95" width="72" height="24"/>
-                            <fontDescription key="fontDescription" name="Avenir-Black" family="Avenir" pointSize="17"/>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="BTC" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2AX-Io-Qqf">
+                            <rect key="frame" x="171" y="79" width="72" height="40"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="40" id="yZZ-ws-xlf"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" name="Avenir-Black" family="Avenir" pointSize="18"/>
                             <color key="textColor" red="0.99164897200000002" green="0.99356168509999998" blue="0.92940312619999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                             <nil key="highlightedColor"/>
                         </label>
@@ -76,7 +79,7 @@
                         <constraint firstItem="2AX-Io-Qqf" firstAttribute="centerX" secondItem="rze-yt-wp4" secondAttribute="centerX" id="SeD-lH-yME"/>
                         <constraint firstItem="2AX-Io-Qqf" firstAttribute="leading" secondItem="rze-yt-wp4" secondAttribute="leading" constant="171" id="Tur-Au-w6O"/>
                         <constraint firstAttribute="trailing" secondItem="9Bp-Xq-uZs" secondAttribute="trailing" constant="108" id="W1A-aY-5Im"/>
-                        <constraint firstItem="2AX-Io-Qqf" firstAttribute="top" secondItem="rze-yt-wp4" secondAttribute="top" constant="95" id="ZIm-mc-O8g"/>
+                        <constraint firstItem="2AX-Io-Qqf" firstAttribute="top" secondItem="rze-yt-wp4" secondAttribute="top" constant="79" id="XeN-an-Ilj"/>
                         <constraint firstItem="9Bp-Xq-uZs" firstAttribute="top" secondItem="rze-yt-wp4" secondAttribute="top" constant="181" id="csh-eV-t5z"/>
                         <constraint firstItem="BHt-nx-Zz5" firstAttribute="leading" secondItem="rze-yt-wp4" secondAttribute="leading" constant="185" id="dQ7-fD-06D"/>
                         <constraint firstItem="0yY-G1-SuE" firstAttribute="centerX" secondItem="rze-yt-wp4" secondAttribute="centerX" id="ePf-Gq-vvx"/>
@@ -156,7 +159,7 @@
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="NLl-8g-rmE" secondAttribute="trailing" constant="25" id="iKg-cx-eVL"/>
                 <constraint firstItem="rze-yt-wp4" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="jkO-VU-FJN"/>
             </constraints>
-            <point key="canvasLocation" x="136.80000000000001" y="108.39580209895054"/>
+            <point key="canvasLocation" x="136.23188405797103" y="107.8125"/>
         </view>
     </objects>
 </document>

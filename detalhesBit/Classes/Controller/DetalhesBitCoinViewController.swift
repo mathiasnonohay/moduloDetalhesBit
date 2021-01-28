@@ -19,16 +19,18 @@ public class DetalhesBitCoinViewController: UIViewController {
     @IBOutlet weak var labelEstrela: UILabel!
     
     // MARK: - Atributos
-    private var valor: Double!
+    private var valor: String!
     private var nome: String!
-    private var valorHora: Double!
-    private var valorMes: Double!
-    private var valorAno: Double!
+    private var valorHora: String!
+    private var valorMes: String!
+    private var valorAno: String!
     private var favorito: Bool!
     private var numCelula: Int!
 
     // MARK: - Contructor
-    public init(_ valor: Double, _ nome: String, _ valorHora: Double, _ valorMes: Double, _ valorAno: Double, _ favorito: Bool, _ numCelula: Int) {
+    
+    // Detalhe pode pegar só os valores sem problemas
+    public init(_ valor: String, _ nome: String, _ valorHora: String, _ valorMes: String, _ valorAno: String, _ favorito: Bool, _ numCelula: Int) {
         self.valor = valor
         self.nome = nome
         self.valorHora = valorHora
@@ -49,7 +51,7 @@ public class DetalhesBitCoinViewController: UIViewController {
         coinDetalhes(self.valor, self.nome, self.valorHora, self.valorMes, self.valorAno, self.favorito)
     }
     
-    private func coinDetalhes(_ valor: Double, _ nome: String, _ valorHora: Double, _ valorMes: Double, _ valorAno: Double, _ favorito: Bool) {
+    private func coinDetalhes(_ valor: String, _ nome: String, _ valorHora: String, _ valorMes: String, _ valorAno: String, _ favorito: Bool) {
         labelCoinValor.text = "$ \(valor)"
         labelCoinNome.text = nome
         labelValorHor.text = "$ \(valorHora)"

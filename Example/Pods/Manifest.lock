@@ -1,5 +1,5 @@
 PODS:
-  - detalhesBit (0.1.0)
+  - detalhesBit (1.2.4)
   - FBSnapshotTestCase (2.1.4):
     - FBSnapshotTestCase/SwiftSupport (= 2.1.4)
   - FBSnapshotTestCase/Core (2.1.4)
@@ -19,7 +19,7 @@ EXTERNAL SOURCES:
     :path: "../"
 
 SPEC CHECKSUMS:
-  detalhesBit: c54e01280357c41288623b90676f7907ec742863
+  detalhesBit: d327709fce2b25479d7822247fbf6fea343f991b
   FBSnapshotTestCase: 094f9f314decbabe373b87cc339bea235a63e07a
 
 PODFILE CHECKSUM: 3e9631a5744d6417b8dd730b04ad5e4ace6ee2cb
