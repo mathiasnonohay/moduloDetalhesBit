@@ -13,8 +13,8 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        let controllerFavoritos = FavoritosViewController(valorBit: 100000, idBit: "BTC", nomeBit: "BitCoin")
-        self.navigationController?.pushViewController(controllerFavoritos, animated: true)
+//        let controllerFavoritos = FavoritosViewController("10", "MAT", "12000.0", "13000.0", "20930009.0", true, 10)
+//        self.navigationController?.pushViewController(controllerFavoritos, animated: true)
         
 //        let controller = DetalhesBitCoinViewController(10, "MAT", 12000.0, 13000.0, 20930009.0, true)
 //        self.navigationController?.pushViewController(controller, animated: true)
@@ -25,3 +25,4 @@ class ViewController: UIViewController {
     }
 
 }
+

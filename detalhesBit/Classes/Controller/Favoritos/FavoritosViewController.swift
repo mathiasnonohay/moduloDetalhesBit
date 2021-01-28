@@ -12,18 +12,29 @@ public class FavoritosViewController: UIViewController {
     @IBOutlet weak var collectionViewFavoritos: UICollectionView!
     
     private let celulaFavoritosIdentifier = "celulaFavoritos"
-    private var arrStrin: Array<String> = []
+    private var arrStrin: Array<Any> = []
     
-    private var valorBit: Double
-    private var idBit: String
-    private var nomeBit: String
-//    private var imageBit: UIImage
+    // MARK: - Atributos
+    private var valor: String!
+    private var nome: String!
+    private var valorHora: String!
+    private var valorMes: String!
+    private var valorAno: String!
+    private var favorito: Bool!
+    private var numCelula: Int!
+
+    // MARK: - Contructor
     
-    public init(valorBit: Double, idBit: String, nomeBit: String) {
-        self.valorBit = valorBit
-        self.idBit = idBit
-        self.nomeBit = nomeBit
-//        self.imageBit = imageBit
+    // Favoritos precisam pegar umas lista de coins para listar corretamente
+    // No momento só pega um e lista X vezes aquele coin
+    public init(_ valor: String, _ nome: String, _ valorHora: String, _ valorMes: String, _ valorAno: String, _ favorito: Bool, _ numCelula: Int) {
+        self.valor = valor
+        self.nome = nome
+        self.valorHora = valorHora
+        self.valorMes = valorMes
+        self.valorAno = valorAno
+        self.favorito = favorito
+        self.numCelula = numCelula
         super.init(nibName: "FavoritosViewController", bundle: Bundle(for: FavoritosViewController.self))
     }
     
@@ -37,39 +48,36 @@ public class FavoritosViewController: UIViewController {
         collectionViewFavoritos.delegate = self
         let nibCelula = UINib(nibName: "FavoritosCollectionViewCell", bundle: Bundle(for: FavoritosViewController.self))
         collectionViewFavoritos.register(nibCelula, forCellWithReuseIdentifier: celulaFavoritosIdentifier)
-        
-        for _ in 1...25{
-            let str = self.nomeBit
-            arrStrin.append(str)
-        }
         collectionViewFavoritos.reloadData()
     }
 }
 
 extension FavoritosViewController: UICollectionViewDelegate, UICollectionViewDataSource{
     
-    private func numberOfSections(in collectionView: UICollectionView) -> Int {
+    public func numberOfSections(in collectionView: UICollectionView) -> Int {
         return 1
     }
     
     public func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return arrStrin.count
+        return self.numCelula
     }
     
     public func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let celula = collectionView.dequeueReusableCell(withReuseIdentifier: celulaFavoritosIdentifier, for: indexPath) as!
             FavoritosCollectionViewCell
-        let str = arrStrin[indexPath.row]
-        celula.nomeBit.text = str
-        celula.idBit.text = "ID"
-        celula.valorBit.text = "\(self.valorBit)"
+        guard let nome = self.nome else { return celula }
+        guard let valor = self.valor else { return celula }
+        celula.nomeBit.text = nome
+        celula.idBit.text = nome
+        
+        celula.valorBit.text = valor
 //        celula.imageBit.image = self.imageBit
         
         return celula
     }
     public func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
 //        let str = arrStrin[indexPath.row]
-        let controller = DetalhesBitCoinViewController(10, "MAT", 12000.0, 13000.0, 20930009.0, true)
+        let controller = DetalhesBitCoinViewController(self.valor, self.nome, self.valorHora, self.valorMes, self.valorAno, self.favorito, self.numCelula)
         self.navigationController?.pushViewController(controller, animated: true)
     }
 }
