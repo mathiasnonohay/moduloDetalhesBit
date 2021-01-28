@@ -18,6 +18,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
         sharedFavorites.checkIfFirstTime()
+        
+        //sharedFavorites.toggleFavorite(shortname: "BTC", name: "Bitcoin", price: "100", idIcon: "", valueHour: "10", valueDay: "240", valueMonth: "3600")
+        
         return true
     }
 

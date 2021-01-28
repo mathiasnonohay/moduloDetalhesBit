@@ -10,9 +10,9 @@
         <!--Navigation Controller-->
         <scene sceneID="vpN-h0-R96">
             <objects>
-                <navigationController navigationBarHidden="YES" id="Hdx-LC-3fR" sceneMemberID="viewController">
-                    <nil key="simulatedTopBarMetrics"/>
+                <navigationController id="Hdx-LC-3fR" sceneMemberID="viewController">
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="yas-Jr-oHv">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <connections>
