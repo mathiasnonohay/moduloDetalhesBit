@@ -13,11 +13,11 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        let controllerFavoritos = FavoritosViewController()
-        self.navigationController?.pushViewController(controllerFavoritos, animated: true)
+//        let controllerFavoritos = FavoritosViewController()
+//        self.navigationController?.pushViewController(controllerFavoritos, animated: true)
         
-//        let controller = DetalhesBitCoinViewController(10, "MAT", 12000.0, 13000.0, 20930009.0, true)
-//        self.navigationController?.pushViewController(controller, animated: true)
+        let controller = DetalhesBitCoinViewController("MAT", "$ 10", "MatCoin", "12000.0", "13000.0", "20930009.0", "ABC", true)
+        self.navigationController?.pushViewController(controller, animated: true)
     }
 
     override func didReceiveMemoryWarning() {

@@ -55,11 +55,11 @@ public class DetalhesBitCoinViewController: UIViewController {
     }
     
     private func coinDetalhes(_ shortname:String, _ valor: String, _ nome: String, _ valorHora: String, _ valorMes: String, _ valorAno: String, _ idIcon:String, _ favorito: Bool) {
-        labelCoinValor.text = "$ \(valor)"
+        labelCoinValor.text = "\(valor)"
         labelCoinNome.text = nome
-        labelValorHor.text = "$ \(valorHora)"
-        labelValorMes.text = "$ \(valorMes)"
-        labelValorAno.text = "$ \(valorAno)"
+        labelValorHor.text = "\(valorHora)"
+        labelValorMes.text = "\(valorMes)"
+        labelValorAno.text = "\(valorAno)"
         if favorito == true {
             botaoAddRem.setTitle("REMOVER", for: .normal)
             labelEstrela.text = "★"
