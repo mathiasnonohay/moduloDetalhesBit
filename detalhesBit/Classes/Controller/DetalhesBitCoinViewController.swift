@@ -53,6 +53,7 @@ public class DetalhesBitCoinViewController: UIViewController {
     override public func viewDidLoad() {
         super.viewDidLoad()
         coinDetalhes(self.shortname, self.valor, self.nome, self.valorHora, self.valorMes, self.valorAno, self.idIcon, self.favorito)
+        setupNavigationBar()
     }
     func setupNavigationBar(){
         self.navigationController?.setNavigationBarHidden(false, animated: true)
