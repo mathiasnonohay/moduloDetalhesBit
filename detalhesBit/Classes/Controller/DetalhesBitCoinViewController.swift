@@ -54,6 +54,9 @@ public class DetalhesBitCoinViewController: UIViewController {
         super.viewDidLoad()
         coinDetalhes(self.shortname, self.valor, self.nome, self.valorHora, self.valorMes, self.valorAno, self.idIcon, self.favorito)
     }
+    func setupNavigationBar(){
+        self.navigationController?.setNavigationBarHidden(false, animated: true)
+    }
     
     private func coinDetalhes(_ shortname:String, _ valor: String, _ nome: String, _ valorHora: String, _ valorMes: String, _ valorAno: String, _ idIcon:String, _ favorito: Bool) {
         labelCoinValor.text = "\(valor)"
