@@ -72,6 +72,10 @@ public class DetalhesBitCoinViewController: UIViewController {
         labelValorMes.text = "\(valorMes)"
         labelValorAno.text = "\(valorAno)"
         imageBit.carregarImagem(idIcon: self.idIcon)
+        botaoAddRem.backgroundColor = .clear
+        botaoAddRem.layer.cornerRadius = 10
+        botaoAddRem.layer.borderWidth = 1
+        botaoAddRem.layer.borderColor = UIColor.white.cgColor
         if favorito == true {
             botaoAddRem.setTitle("REMOVER", for: .normal)
             labelEstrela.text = "★"
@@ -90,6 +94,7 @@ public class DetalhesBitCoinViewController: UIViewController {
         } else {
             self.favorito = true
         }
+        
         coinDetalhes(self.shortname, self.valor, self.nome, self.valorHora, self.valorMes, self.valorAno, self.idIcon, self.favorito)
     }
 }
