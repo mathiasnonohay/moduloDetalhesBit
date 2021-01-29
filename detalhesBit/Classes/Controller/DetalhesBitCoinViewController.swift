@@ -29,10 +29,7 @@ public class DetalhesBitCoinViewController: UIViewController {
     private var valorAno: String!
     private var favorito: Bool!
     private var idIcon: String!
-
     // MARK: - Contructor
-    
-    // Detalhe pode pegar só os valores sem problemas
     public init(_ shortname: String, _ valor: String, _ nome: String, _ valorHora: String, _ valorMes: String, _ valorAno: String, _ idIcon:String, _ favorito: Bool) {
         self.valor = valor
         self.nome = nome
@@ -61,6 +58,8 @@ public class DetalhesBitCoinViewController: UIViewController {
         coinDetalhes(self.shortname, self.valor, self.nome, self.valorHora, self.valorMes, self.valorAno, self.idIcon, self.favorito)
     }
     private func setupNavigationBar(){
+        let textAttributes = [NSAttributedStringKey.foregroundColor:UIColor.white]
+        navigationController?.navigationBar.titleTextAttributes = textAttributes
         self.navigationController?.navigationBar.tintColor = .white
         self.navigationController?.navigationBar.isTranslucent = false
         self.navigationController?.navigationBar.barTintColor = UIColor(red: 139/255, green: 152/255, blue: 91/255, alpha: 1)
@@ -68,6 +67,7 @@ public class DetalhesBitCoinViewController: UIViewController {
     private func coinDetalhes(_ shortname:String, _ valor: String, _ nome: String, _ valorHora: String, _ valorMes: String, _ valorAno: String, _ idIcon:String, _ favorito: Bool) {
         labelCoinValor.text = "\(valor)"
         labelCoinNome.text = nome
+        self.navigationController?.navigationBar.topItem?.title = shortname
         labelValorHor.text = "\(valorHora)"
         labelValorMes.text = "\(valorMes)"
         labelValorAno.text = "\(valorAno)"
