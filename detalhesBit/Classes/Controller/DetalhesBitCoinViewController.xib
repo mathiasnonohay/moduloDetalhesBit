@@ -51,7 +51,11 @@
                             </connections>
                         </button>
                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="(" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gbP-eO-ThF">
-                            <rect key="frame" x="303" y="91.666666666666671" width="20.333333333333314" height="24.333333333333329"/>
+                            <rect key="frame" x="300.33333333333331" y="91.666666666666671" width="23" height="24.333333333333329"/>
+                            <constraints>
+                                <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="23" id="2oO-IL-cKt"/>
+                                <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="23" id="nMY-n8-GnY"/>
+                            </constraints>
                             <fontDescription key="fontDescription" name="BodoniOrnamentsITCTT" family="Bodoni Ornaments" pointSize="24"/>
                             <color key="textColor" red="0.99164897200000002" green="0.99356168509999998" blue="0.92940312619999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                             <nil key="highlightedColor"/>
@@ -78,8 +82,8 @@
                         <constraint firstItem="9Bp-Xq-uZs" firstAttribute="centerX" secondItem="rze-yt-wp4" secondAttribute="centerX" id="2u2-nT-XMQ"/>
                         <constraint firstItem="2AX-Io-Qqf" firstAttribute="top" secondItem="rze-yt-wp4" secondAttribute="top" id="6Vh-sa-wox"/>
                         <constraint firstItem="9Bp-Xq-uZs" firstAttribute="top" secondItem="BHt-nx-Zz5" secondAttribute="bottom" constant="51" id="9j6-vB-U28"/>
-                        <constraint firstItem="9Bp-Xq-uZs" firstAttribute="top" secondItem="gbP-eO-ThF" secondAttribute="bottom" constant="32" id="GCc-hU-2su"/>
                         <constraint firstItem="BHt-nx-Zz5" firstAttribute="centerX" secondItem="rze-yt-wp4" secondAttribute="centerX" id="HWj-3X-1nm"/>
+                        <constraint firstItem="9Bp-Xq-uZs" firstAttribute="top" secondItem="gbP-eO-ThF" secondAttribute="bottom" constant="31.999999999999986" id="Oqm-ZT-arU"/>
                         <constraint firstAttribute="trailing" secondItem="gbP-eO-ThF" secondAttribute="trailing" constant="90.670000000000002" id="QbD-aw-5jm"/>
                         <constraint firstAttribute="height" constant="350" id="Ruf-dB-Rli"/>
                         <constraint firstItem="2AX-Io-Qqf" firstAttribute="centerX" secondItem="rze-yt-wp4" secondAttribute="centerX" constant="1" id="SeD-lH-yME"/>
@@ -88,7 +92,6 @@
                         <constraint firstItem="0yY-G1-SuE" firstAttribute="top" secondItem="9Bp-Xq-uZs" secondAttribute="bottom" constant="51" id="gm3-uq-zoK"/>
                         <constraint firstItem="9Bp-Xq-uZs" firstAttribute="leading" secondItem="rze-yt-wp4" secondAttribute="leading" id="kO3-Wz-Fkv"/>
                         <constraint firstAttribute="trailing" secondItem="9Bp-Xq-uZs" secondAttribute="trailing" id="u4c-UV-JqY"/>
-                        <constraint firstItem="gbP-eO-ThF" firstAttribute="leading" secondItem="BHt-nx-Zz5" secondAttribute="trailing" constant="73.333333333333343" id="xxB-rV-ScQ"/>
                     </constraints>
                 </view>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="última hora" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QFp-jZ-iLr">
